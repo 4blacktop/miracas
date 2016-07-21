@@ -18,52 +18,10 @@ function onDeviceReady() {
 	//ref.addEventListener('loadstart', function(event) { alert(event.url); });
 	
 	var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_self', 'location=no,zoom=no');
-	
-	
-	
-	ref.addEventListener('loadstart', inAppBrowserbLoadStart);
-	ref.addEventListener('loadstop', inAppBrowserbLoadStop);
-	ref.addEventListener('loaderror', inAppBrowserbLoadError);
-	
-	
-	
-	
-	
-	
-	
-   function inAppBrowserbLoadStart(event) {
-	    
-		 navigator.notification.activityStart("Please Wait", "Its loading....");
-         alert(event.type + ' - ' + event.url);
-		
-    }
-
-    function inAppBrowserbLoadStop(event) {
-		 navigator.notification.activityStop();
-         alert(event.type + ' - ' + event.url);
-		
-    }
-
-    function inAppBrowserbLoadError(event) {
-	     navigator.notification.activityStop();
-         alert(event.type + ' - ' + event.message);
-}	
-	
-	
-	
-	
-	
-	
-	
 	ref.addEventListener('exit', function() {
 		navigator.app.exitApp();
 	});
-	
 }
-
-
-
-
 				
 document.addEventListener('push-notification', function(event) {
     //event.notification is a JSON push notifications payload
