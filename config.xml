@@ -56,7 +56,7 @@
 	<access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
 	<preference name="android-build-tool" value="gradle" />
 
-  <access origin="*"/>
+	<access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>

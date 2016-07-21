@@ -12,3 +12,12 @@ miracas160721
 http://stackoverflow.com/questions/35090218/open-url-in-webview-phonegap
 
 <iframe src="http://www.google.com></iframe>
+
+http://stackoverflow.com/questions/31485500/android-disable-zoom-button-inside-a-webview
+
+нижний ответ рулит
+
+
+http://www.kidsil.net/2014/04/phonegap-inappbrowser-tips/
+
+белый экран
