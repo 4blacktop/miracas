@@ -29,6 +29,11 @@ https://github.com/apache/cordova-plugin-inappbrowser/blob/47e332f/README.md
 
 
 
-
+pushwoosh
 id - miracas
 pwd - roopam123 
+
+
+
+индикатор загрузки
+http://javacourseblog.blogspot.ru/2014/02/show-loading-screen-in-phonegap-app.html

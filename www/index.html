@@ -34,19 +34,19 @@ function onDeviceReady() {
    function inAppBrowserbLoadStart(event) {
 	    
 		 navigator.notification.activityStart("Please Wait", "Its loading....");
-         alert(event.type + ' - ' + event.url);
+         // alert(event.type + ' - ' + event.url);
 		
     }
 
     function inAppBrowserbLoadStop(event) {
 		 navigator.notification.activityStop();
-         alert(event.type + ' - ' + event.url);
+         // alert(event.type + ' - ' + event.url);
 		
     }
 
     function inAppBrowserbLoadError(event) {
 	     navigator.notification.activityStop();
-         alert(event.type + ' - ' + event.message);
+         // alert(event.type + ' - ' + event.message);
 }	
 	
 	
