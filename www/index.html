@@ -26,13 +26,9 @@ function onDeviceReady() {
 	ref.addEventListener('loaderror', inAppBrowserbLoadError);
 	
 	
-	
-	
-	
-	
-	
    function inAppBrowserbLoadStart(event) {
-	    window.plugins.spinnerDialog.show();
+	    window.plugins.spinnerDialog.show(null, null, true);
+		 //navigator.notification.activityStart();
 		 //navigator.notification.activityStart("Please Wait", "Its loading....");
          // alert(event.type + ' - ' + event.url);
 		
@@ -49,12 +45,7 @@ function onDeviceReady() {
 		window.plugins.spinnerDialog.hide();
 	     //navigator.notification.activityStop();
          // alert(event.type + ' - ' + event.message);
-}	
-	
-	
-	
-	
-	
+	}	
 	
 	
 	ref.addEventListener('exit', function() {

@@ -36,4 +36,6 @@ pwd - roopam123
 
 
 индикатор загрузки
+https://build.phonegap.com/plugins/1252
+основной код отсюда
 http://javacourseblog.blogspot.ru/2014/02/show-loading-screen-in-phonegap-app.html
