@@ -19,5 +19,16 @@ http://stackoverflow.com/questions/31485500/android-disable-zoom-button-inside-a
 
 
 http://www.kidsil.net/2014/04/phonegap-inappbrowser-tips/
+белый экран на выходе
 
-белый экран
+
+
+https://github.com/apache/cordova-plugin-inappbrowser/blob/47e332f/README.md
+белый экран на входе - сделать дольше сплэшскрин
+либо во время загрузки делать лоадинг индикатор
+
+
+
+
+id - miracas
+pwd - roopam123 
