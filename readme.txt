@@ -1,0 +1,10 @@
+api AIzaSyAVQY5_-KmGqnolVL5mdBMo8GYnV78yMWs
+
+projectid: "735538929007
+
+PUSHWOOSH_APP_ID BAA25-A8B12
+
+keytool -genkey -v -keystore miracas.keystore -alias miracas_alias_name -keyalg RSA -keysize 2048 -validity 10000
+все miracas
+код страны ru
+miracas160721
