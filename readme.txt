@@ -39,3 +39,13 @@ pwd - roopam123
 https://build.phonegap.com/plugins/1252
 основной код отсюда
 http://javacourseblog.blogspot.ru/2014/02/show-loading-screen-in-phonegap-app.html
+
+
+
+
+экран перед сплэшскрином
+http://stackoverflow.com/questions/21184367/blank-splash-screen-on-android-with-phonegap-build
+http://stackoverflow.com/questions/17440992/phonegap-blank-page-before-showing-splash-screen
+http://cyrilmottier.com/2013/01/23/android-app-launching-made-gorgeous/
+https://github.com/phonegap/build/issues/97
+http://stackoverflow.com/questions/18797238/phonegap-android-build-intermediate-screen-before-splash-screen

@@ -26,9 +26,9 @@
 	
 	
 	
-	    <gap:config-file platform="android" parent="/manifest">
-        <application android:theme="@android:style/Theme.NoTitleBar"></application>
-    </gap:config-file>
+<gap:config-file platform="android" parent="/manifest">
+    <application android:theme="@android:style/Theme.NoTitleBar"></application>
+</gap:config-file>
 	
 	
 	
