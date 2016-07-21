@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="yes">
-		<meta name="theme-color" content="#2196f3"><!-- Color theme for statusbar -->
-	</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
     <body>
-	
-	<iframe src="http://miracas.com/push></iframe>
-	
 				<!-- window.open('http://miracas.com', '_self ', 'location=yes'); -->
+        <div>
             <script type="text/javascript" charset="utf-8">
                 document.addEventListener("deviceready", onDeviceReady, false);
 
                 function onDeviceReady() {
-				//window.open('http://miracas.com/push', '_self ', 'location=no');
 				initPushwoosh();
+				window.open('http://miracas.com/push', '_self ', 'location=no', 'zoom=no');
                 }
-				
-document.addEventListener('push-notification', function(event) {
-    //event.notification is a JSON push notifications payload
-    var title = event.notification.title;
- 
-    //example of obtaining custom data from push notification
-    var userData = event.notification.userdata;
- 
-    console.warn('user data: ' + JSON.stringify(userData));
- 
-    //we might want to display an alert with push notifications title
-    alert(title);
-});
-
-				
 				
 function initPushwoosh()
 {
@@ -68,7 +47,7 @@ function initPushwoosh()
 				
 				
             </script>
-        
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
