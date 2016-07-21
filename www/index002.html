@@ -8,16 +8,13 @@
 		<meta name="theme-color" content="#2196f3"><!-- Color theme for statusbar -->
 	</head>
     <body>
-	
-	<iframe src="http://miracas.com/push></iframe>
-	
 				<!-- window.open('http://miracas.com', '_self ', 'location=yes'); -->
+        <div>
             <script type="text/javascript" charset="utf-8">
                 document.addEventListener("deviceready", onDeviceReady, false);
 
                 function onDeviceReady() {
-				//window.open('http://miracas.com/push', '_self ', 'location=no');
-				initPushwoosh();
+				window.open('http://miracas.com/push', '_self ', 'location=no');
                 }
 				
 document.addEventListener('push-notification', function(event) {
@@ -68,7 +65,7 @@ function initPushwoosh()
 				
 				
             </script>
-        
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>

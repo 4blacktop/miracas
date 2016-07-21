@@ -8,3 +8,7 @@ keytool -genkey -v -keystore miracas.keystore -alias miracas_alias_name -keyalg 
 все miracas
 код страны ru
 miracas160721
+
+http://stackoverflow.com/questions/35090218/open-url-in-webview-phonegap
+
+<iframe src="http://www.google.com></iframe>
