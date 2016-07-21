@@ -49,3 +49,7 @@ http://stackoverflow.com/questions/17440992/phonegap-blank-page-before-showing-s
 http://cyrilmottier.com/2013/01/23/android-app-launching-made-gorgeous/
 https://github.com/phonegap/build/issues/97
 http://stackoverflow.com/questions/18797238/phonegap-android-build-intermediate-screen-before-splash-screen
+
+http://stackoverflow.com/questions/21884095/remove-title-bar-phonegap
+
+http://stackoverflow.com/questions/31206998/where-to-put-gapconfig-file-in-phonegap-config-xml
