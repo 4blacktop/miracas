@@ -49,7 +49,9 @@ function onDeviceReady() {
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
 	     //navigator.notification.activityStop();
-         // alert(event.type + ' - ' + event.message);
+         alert(event.type + ' - ' + event.message);
+//document.write('<img src="http://static.forosdelweb.com/fdwtheme/logo-navidad.png?'+Math.random()+'" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
+document.write('<img src="splash.png" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
 	}	
 
 	
