@@ -21,7 +21,36 @@ function onDeviceReady() {
 	window.open('http://miracas.com/push', '_self ', 'location=no,zoom=no');
 	
 	
+	
+	ref.addEventListener('loadstart', inAppBrowserbLoadStart);
+	ref.addEventListener('loadstop', inAppBrowserbLoadStop);
+	ref.addEventListener('loaderror', inAppBrowserbLoadError);
+	ref.addEventListener('exit', function() {
+		navigator.app.exitApp();
+	});
+	
+	
+   function inAppBrowserbLoadStart(event) {
+	    window.plugins.spinnerDialog.show(null, null, true);
+		 //navigator.notification.activityStart();
+		 //navigator.notification.activityStart("Please Wait", "Its loading....");
+         // alert(event.type + ' - ' + event.url);
+		
+    }
 
+    function inAppBrowserbLoadStop(event) {
+		window.plugins.spinnerDialog.hide();
+		 //navigator.notification.activityStop();
+         // alert(event.type + ' - ' + event.url);
+		
+    }
+
+    function inAppBrowserbLoadError(event) {
+		window.plugins.spinnerDialog.hide();
+	     //navigator.notification.activityStop();
+         // alert(event.type + ' - ' + event.message);
+	}	
+	
 	
 	
 }
