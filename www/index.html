@@ -10,6 +10,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
+	initPushwoosh();
 	
 	//window.open = cordova.InAppBrowser.open;
 	//var ref = window.open('http://miracas.com/push', '_blank', 'location=no', 'zoom=no');
@@ -20,7 +21,6 @@ function onDeviceReady() {
 	//window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	
 	var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-	initPushwoosh();
 	
 	
 	
