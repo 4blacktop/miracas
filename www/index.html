@@ -17,7 +17,9 @@ function onDeviceReady() {
 	//ref.addEventListener('loadstart', function(event) { alert(event.url); });
 	
 	//var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-	window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
+	//window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
+	
+	var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	initPushwoosh();
 	
 	
@@ -107,6 +109,7 @@ function initPushwoosh()
 				
             </script>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="cordova_plugins.js"></script>
     </body>
 </html>
