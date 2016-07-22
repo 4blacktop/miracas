@@ -57,13 +57,13 @@ function onDeviceReady() {
 	
 	
 	
-document.addEventListener("offline", onOffline, false);
+	document.addEventListener("offline", onOffline, false);
 
-function onOffline() {
-    // Handle the offline event
-	alert(event.type + ' - ' + event.url);
-	var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
-}
+	function onOffline() {
+		// Handle the offline event
+		//alert(event.type + ' - ' + event.url);
+		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
+	}
 
 }
 
