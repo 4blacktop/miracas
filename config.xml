@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android" id="com.miracas" version="2.1.6" versionCode="242">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android" id="com.miracas" version="2.1.6" versionCode="243">
   <name>Miracas</name>
   <description>Miracas mobile app</description>
   <author href="http://vladimirklochkov.ru" email="4blogga@gmail.com">Vladimir Klochkov</author>
