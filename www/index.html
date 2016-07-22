@@ -51,16 +51,21 @@ function onDeviceReady() {
 	     //navigator.notification.activityStop();
          alert(event.type + ' - ' + event.message);
 //document.write('<img src="http://static.forosdelweb.com/fdwtheme/logo-navidad.png?'+Math.random()+'" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
-document.write('<img src="splash.png" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
+//document.write('<img src="splash.png" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
 	}	
 
 	
 	
 	
+document.addEventListener("offline", onOffline, false);
+
+function onOffline() {
+    // Handle the offline event
+	alert(event.type + ' - ' + event.url);
+	var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
 }
 
-
-
+}
 
 				
 document.addEventListener('push-notification', function(event) {
