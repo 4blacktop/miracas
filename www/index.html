@@ -13,19 +13,7 @@ function onDeviceReady() {
 	initPushwoosh();
 	
 	
-	document.addEventListener("online", onAppOnline, false);
-	function onAppOnline() {
-		// Handle the offline event
-		//alert(event.type + ' - ' + event.url);
-		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-	}
 
-	document.addEventListener("offline", onAppOffline, false);
-	function onAppOffline() {
-		// Handle the offline event
-		//alert(event.type + ' - ' + event.url);
-		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
-	}
 	
 	//window.open = cordova.InAppBrowser.open;
 	//var ref = window.open('http://miracas.com/push', '_blank', 'location=no', 'zoom=no');
@@ -54,12 +42,36 @@ function onDeviceReady() {
 		
     }
 
+	document.addEventListener("online", onAppOnline, false);
+	function onAppOnline() {
+		// Handle the offline event
+		//alert(event.type + ' - ' + event.url);
+		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
+	}
+
+	document.addEventListener("offline", onAppOffline, false);
+	function onAppOffline() {
+		// Handle the offline event
+		//alert(event.type + ' - ' + event.url);
+		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
+	}	
+	
+	
     function inAppBrowserbLoadStop(event) {
 		window.plugins.spinnerDialog.hide();
 		 //navigator.notification.activityStop();
          // alert(event.type + ' - ' + event.url);
 		
     }
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
