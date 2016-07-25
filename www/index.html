@@ -34,6 +34,8 @@ function onDeviceReady() {
 		navigator.app.exitApp();
 	});
 	
+	
+	
    function inAppBrowserbLoadStart(event) {
 	    window.plugins.spinnerDialog.show(null, null, true);
 		 //navigator.notification.activityStart();
@@ -54,18 +56,16 @@ function onDeviceReady() {
 	
 	
 	
-	document.addEventListener("online", onAppOnline, false);
+	//document.addEventListener("online", onAppOnline, false);
 	function onAppOnline() {
 		// Handle the offline event
-		//alert(event.type + ' - ' + event.url);
-		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
+		// var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	}
 
-	document.addEventListener("offline", onAppOffline, false);
+	//document.addEventListener("offline", onAppOffline, false);
 	function onAppOffline() {
 		// Handle the offline event
-		//alert(event.type + ' - ' + event.url);
-		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
+		// var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
 	}	
 	
 	
