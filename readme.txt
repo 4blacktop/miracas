@@ -44,6 +44,8 @@ http://javacourseblog.blogspot.ru/2014/02/show-loading-screen-in-phonegap-app.ht
 
 
 экран перед сплэшскрином
+https://build.phonegap.com/plugins/5514
+
 http://stackoverflow.com/questions/21184367/blank-splash-screen-on-android-with-phonegap-build
 http://stackoverflow.com/questions/17440992/phonegap-blank-page-before-showing-splash-screen
 http://cyrilmottier.com/2013/01/23/android-app-launching-made-gorgeous/
