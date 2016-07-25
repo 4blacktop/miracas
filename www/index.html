@@ -26,6 +26,11 @@ function onDeviceReady() {
 	var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	
 	
+
+	
+	
+	
+	
 	
 	ref.addEventListener('loadstart', inAppBrowserbLoadStart);
 	ref.addEventListener('loadstop', inAppBrowserbLoadStop);
@@ -56,20 +61,7 @@ function onDeviceReady() {
 	
 	
 	
-	//document.addEventListener("online", onAppOnline, false);
-	function onAppOnline() {
-		// Handle the offline event
-		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-	}
 
-	//document.addEventListener("offline", onAppOffline, false);
-	function onAppOffline() {
-		// Handle the offline event
-		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
-	}	
-	
-	
-	
 	
 	
 
@@ -81,6 +73,20 @@ function onDeviceReady() {
 //document.write('<img src="splash.png" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
 	}	
 
+	
+	
+	
+		document.addEventListener("online", onAppOnline, false);
+	function onAppOnline() {
+		// Handle the offline event
+		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
+	}
+
+	document.addEventListener("offline", onAppOffline, false);
+	function onAppOffline() {
+		// Handle the offline event
+		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
+	}	
 
 	
 
