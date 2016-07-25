@@ -42,6 +42,18 @@ function onDeviceReady() {
 		
     }
 
+	
+	
+    function inAppBrowserbLoadStop(event) {
+		window.plugins.spinnerDialog.hide();
+		 //navigator.notification.activityStop();
+         // alert(event.type + ' - ' + event.url);
+		
+    }
+	
+	
+	
+	
 	document.addEventListener("online", onAppOnline, false);
 	function onAppOnline() {
 		// Handle the offline event
@@ -55,18 +67,6 @@ function onDeviceReady() {
 		//alert(event.type + ' - ' + event.url);
 		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
 	}	
-	
-	
-    function inAppBrowserbLoadStop(event) {
-		window.plugins.spinnerDialog.hide();
-		 //navigator.notification.activityStop();
-         // alert(event.type + ' - ' + event.url);
-		
-    }
-	
-	
-	
-	
 	
 	
 	
