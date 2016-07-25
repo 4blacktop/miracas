@@ -20,7 +20,7 @@
   <preference name="android-targetSdkVersion" value="23"/>
   <preference name="android-installLocation" value="auto"/>
   
-	<preference name="SplashScreen" value="splash.png" />
+	<preference name="SplashScreen" value="res/splash.png" />
 	<preference name="SplashScreenDelay" value="10000" />
 	
 	
@@ -97,7 +97,7 @@
   
     
   <icon src="icon.png"/>
-  <splash src="splash.png" />
+  <!-- <splash src="splash.png" /> -->
   
 	<!-- social sharing plugin installed -->
 	<feature name="SocialSharing">
