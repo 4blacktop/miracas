@@ -23,6 +23,18 @@ function onDeviceReady() {
 		navigator.app.exitApp();
 	});
 	
+	ref.addEventListener("online", onAppOnline, false);
+	function onAppOnline() {
+		// Handle the offline event
+		var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
+	}
+
+	ref.addEventListener("offline", onAppOffline, false);
+	function onAppOffline() {
+		// Handle the offline event
+		var ref = cordova.InAppBrowser.open('404.html', '_blank', 'location=no,zoom=no');
+	}	
+	
    function inAppBrowserbLoadStart(event) {
 	    window.plugins.spinnerDialog.show(null, null, true);
     }
@@ -34,6 +46,7 @@ function onDeviceReady() {
 
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
+		var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	}	
 
 	
