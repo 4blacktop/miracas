@@ -12,7 +12,6 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	initPushwoosh();
 	
-	var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 
 	
 	document.addEventListener('loadstart', inAppBrowserbLoadStart);
@@ -33,9 +32,11 @@ function onDeviceReady() {
 
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
-		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
 	}	
 
+	
+	
+	var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 }
 				
 document.addEventListener('push-notification', function(event) {
