@@ -24,36 +24,18 @@ function onDeviceReady() {
 	
    function inAppBrowserbLoadStart(event) {
 	    window.plugins.spinnerDialog.show(null, null, true);
-		//document.addEventListener("online", onAppOnline, false);
-		document.addEventListener("offline", onAppOffline, false);
     }
 	
     function inAppBrowserbLoadStop(event) {
 		window.plugins.spinnerDialog.hide();
-		//document.addEventListener("online", onAppOnline, false);
-		document.addEventListener("offline", onAppOffline, false);
 
     }
 
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
-		//document.addEventListener("online", onAppOnline, false);
-		document.addEventListener("offline", onAppOffline, false);
-
-		//var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
-	}	
-
-	function onAppOnline() {
-		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-	}
-
-	function onAppOffline() {
 		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
 	}	
-	
 
-	
-	
 }
 				
 document.addEventListener('push-notification', function(event) {
