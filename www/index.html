@@ -22,8 +22,8 @@ function onDeviceReady() {
 	ref.addEventListener('exit', function() {
 		navigator.app.exitApp();
 	});
-	document.addEventListener("online", onAppOnline, false);
-	document.addEventListener("offline", onAppOffline, false);
+	ref.addEventListener("online", onAppOnline, false);
+	ref.addEventListener("offline", onAppOffline, false);
 	
 	function onAppOnline() {
 		// Handle the offline event
