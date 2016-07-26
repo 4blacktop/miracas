@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android" id="com.miracas" version="2.1.6" versionCode="246">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android" id="com.miracas" version="2.1.6" versionCode="247">
   <name>Miracas</name>
   <description>Miracas mobile app</description>
   <author href="http://vladimirklochkov.ru" email="4blogga@gmail.com">Vladimir Klochkov</author>
@@ -40,8 +40,7 @@
 
 	
 
-  <!-- <plugin name="com.sharinglabs.spinnerdialog" spec="1.3.2" source="pgb" /> -->
-  <plugin name="hu.dpal.phonegap.plugins.spinnerdialog3" spec="1.3.9" source="pgb" /> 
+  <!-- <plugin name="hu.dpal.phonegap.plugins.spinnerdialog3" spec="1.3.9" source="pgb" />  -->
   
   <gap:plugin name="org.apache.cordova.battery-status"/>
   <!-- <gap:plugin name="org.apache.cordova.camera"/> -->
@@ -57,12 +56,14 @@
   <gap:plugin name="org.apache.cordova.geolocation"/>
   <gap:plugin name="org.apache.cordova.globalization"/>
   <gap:plugin name="org.apache.cordova.media"/>
-  <!-- <gap:plugin name="org.apache.cordova.network-information"/> -->
-  <plugin name="org.apache.cordova.network-information" spec="0.2.15" source="pgb" />
   <gap:plugin name="org.apache.cordova.vibration"/>
+
+
+
+  <!-- <plugin name="org.apache.cordova.network-information" spec="0.2.15" source="pgb" /> -->
+
+
   
-  <!-- <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" /> -->
-  <!-- <plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />-->
   <plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
   
   

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
     <body>
-				<!-- window.open('http://miracas.com', '_self ', 'location=yes'); -->
         <div>
 <script type="text/javascript" charset="utf-8">
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -12,10 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	initPushwoosh();
 	
-	//var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-
-	alert(navigator.connection.type);
 	
 	ref.addEventListener('loadstart', inAppBrowserbLoadStart);
 	ref.addEventListener('loadstop', inAppBrowserbLoadStop);
@@ -24,19 +19,6 @@ function onDeviceReady() {
 		navigator.app.exitApp();
 	});
 	
-	
-	//ref.addEventListener("online", onAppOnline, false);
-	//ref.addEventListener("offline", onAppOffline, false);
-	
-	function onAppOnline() {
-		// Handle the offline event
-		var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-	}
-
-	function onAppOffline() {
-		// Handle the offline event
-		var ref = cordova.InAppBrowser.open('404.html', '_blank', 'location=no,zoom=no');
-	}	
 	
    function inAppBrowserbLoadStart(event) {
 	    window.plugins.spinnerDialog.show(null, null, true);
@@ -49,12 +31,7 @@ function onDeviceReady() {
 
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
-		//var ref = cordova.InAppBrowser.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
-		var ref = cordova.InAppBrowser.open('404.html', '_blank', 'location=no,zoom=no');
-		alert(navigator.connection.type);
 	}	
-
-	
 	
 }
 				
