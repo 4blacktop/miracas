@@ -14,33 +14,60 @@ function onDeviceReady() {
 	
 	var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 
-	document.addEventListener("online", onAppOnline, false);
-	document.addEventListener("offline", onAppOffline, false);
 	
-	document.addEventListener('loadstart', inAppBrowserbLoadStart);
-	document.addEventListener('loadstop', inAppBrowserbLoadStop);
-	document.addEventListener('loaderror', inAppBrowserbLoadError);
-	document.addEventListener('exit', function() {
+	ref.addEventListener('loadstart', inAppBrowserbLoadStart);
+	ref.addEventListener('loadstop', inAppBrowserbLoadStop);
+	ref.addEventListener('loaderror', inAppBrowserbLoadError);
+	ref.addEventListener('exit', function() {
 		navigator.app.exitApp();
 	});
 	
+	
+	
    function inAppBrowserbLoadStart(event) {
 	    window.plugins.spinnerDialog.show(null, null, true);
+		 //navigator.notification.activityStart();
+		 //navigator.notification.activityStart("Please Wait", "Its loading....");
+         // alert(event.type + ' - ' + event.url);
+		
     }
+
+	
 	
     function inAppBrowserbLoadStop(event) {
 		window.plugins.spinnerDialog.hide();
+		 //navigator.notification.activityStop();
+         // alert(event.type + ' - ' + event.url);
+		
     }
+	
+	
+	
+	
+
+	
+	
 
     function inAppBrowserbLoadError(event) {
 		window.plugins.spinnerDialog.hide();
+	     //navigator.notification.activityStop();
+         //alert(event.type + ' - ' + event.message);
+//document.write('<img src="http://static.forosdelweb.com/fdwtheme/logo-navidad.png?'+Math.random()+'" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
+//document.write('<img src="splash.png" style="display:none" onload="alert(&quot;hay internet&quot;)" onerror="alert(&quot;no hay internet&quot;)" />');
 	}	
 
+	
+	
+
+	document.addEventListener("online", onAppOnline, false);
 	function onAppOnline() {
+		// Handle the offline event
 		var ref = window.open('http://miracas.com/push', '_blank', 'location=no,zoom=no');
 	}
 
+	document.addEventListener("offline", onAppOffline, false);
 	function onAppOffline() {
+		// Handle the offline event
 		var ref = window.open('404.html', '_blank', 'location=no,zoom=no');
 	}	
 	
@@ -48,6 +75,7 @@ function onDeviceReady() {
 	
 	
 }
+
 				
 document.addEventListener('push-notification', function(event) {
     //event.notification is a JSON push notifications payload
