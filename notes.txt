@@ -1,4 +1,4 @@
-api AIzaSyAVQY5_-KmGqnolVL5mdBMo8GYnV78yMWs
+api 
 
 projectid: "735538929007
 
@@ -7,7 +7,6 @@ PUSHWOOSH_APP_ID BAA25-A8B12
 keytool -genkey -v -keystore miracas.keystore -alias miracas_alias_name -keyalg RSA -keysize 2048 -validity 10000
 все miracas
 код страны ru
-miracas160721
 
 http://stackoverflow.com/questions/35090218/open-url-in-webview-phonegap
 
@@ -31,7 +30,6 @@ https://github.com/apache/cordova-plugin-inappbrowser/blob/47e332f/README.md
 
 pushwoosh
 id - miracas
-pwd - roopam123 
 
 
 
@@ -39,8 +37,6 @@ pwd - roopam123
 https://build.phonegap.com/plugins/1252
 основной код отсюда
 http://javacourseblog.blogspot.ru/2014/02/show-loading-screen-in-phonegap-app.html
-
-
 
 
 экран перед сплэшскрином
